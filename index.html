@@ -1,32 +1,867 @@
----
-layout: default
----
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Abraham Huitron</title>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abraham Huitron | Senior Data Analyst &amp; Analytics Specialist</title>
+  <meta
+    name="description"
+    content="Abraham Huitron — Senior Data Analyst & Analytics Specialist (M.S. in Data Science) with 8+ years of experience architecting scalable Power BI ecosystems, automating SQL/Python pipelines, and AI-augmented analytics."
+  />
+  <meta property="og:title" content="Abraham Huitron | Senior Data Analyst & Analytics Specialist" />
+  <meta
+    property="og:description"
+    content="8+ years of experience in Power BI (DAX, Power Query), SQL/Python pipelines, SSRS, and AI-augmented analytics."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.abrahamhuitron.com" />
+  <meta property="og:image" content="https://www.abrahamhuitron.com/images/me.png" />
 
-    <body>
-        <h1 style="text-align:center;">Abraham Huitron</h1>
-        <img src="images/me.png" alt="Me" class="center" width=500 height=500>
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 
-        <p>This page is a work in progress.</p>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Accents -->
+  <div class="ambient-glow ambient-glow--amber" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow--cyan" aria-hidden="true"></div>
 
-        <a href="https://www.linkedin.com/in/AbrahamHuitron">
-            <img src="icons/LinkedIn.svg" alt="LinkedIn" width=200 height=100>
-        </a>
+  <!-- ====================================================================
+       Sticky Top Navigation
+       ==================================================================== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="brand">
+        <span class="brand__monogram">AH</span>
+        <span class="brand__text">
+          <span>Abraham Huitron</span>
+          <span class="brand__role">Senior Data Analyst • M.S. Data Science</span>
+        </span>
+      </a>
 
-        <br>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#impact" class="active">Impact</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <!-- Uncomment the link below when you enable the #projects section -->
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="#contact">Contact</a>
+      </nav>
 
-        <a href="https://www.twitter.com/ayeeebroham">
-            <img src="icons/Twitter.svg" alt="Twitter" width=200 height=100>
-        </a>
+      <div class="nav-actions">
+        <button
+          type="button"
+          id="theme-toggle"
+          class="btn-icon"
+          aria-label="Toggle color theme"
+          title="Toggle Dark / Light Mode"
+        >
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg
+            class="icon-sun"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg
+            class="icon-moon"
+            style="display: none;"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
 
-        <br>
+        <button type="button" class="btn btn--primary btn--sm js-print-resume">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Print / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <iframe src="" height=1920 width = 1080></iframe>
-    
-    </body>
+  <main id="top">
+    <!-- ==================================================================
+         Hero Section
+         ================================================================== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="status-pill">
+            <span class="status-pill__dot"></span>
+            <span>Senior Data Analyst &amp; Analytics Specialist • M.S. in Data Science</span>
+          </div>
+
+          <h1 class="hero__title">Abraham Huitron</h1>
+          <p class="hero__subtitle">
+            Architecting Scalable <span>Power BI Ecosystems &amp; AI‑Augmented Analytics</span>
+          </p>
+
+          <p class="hero__summary">
+            Senior Data Analyst &amp; Analytics Specialist (M.S. in Data Science) with 8+ years of
+            experience architecting scalable Power BI ecosystems, automating SQL/Python pipelines,
+            and translating complex datasets into clear visual stories for non‑technical executives.
+            Daily practitioner of AI‑augmented analytics (Copilot, LLMs) to accelerate legacy report
+            conversions, automate code reviews and documentation, and drive a 30%+ gain in
+            enterprise reporting efficiency.
+          </p>
+
+          <!-- Contact Information Strip (Privacy-first: Location + LinkedIn) -->
+          <div class="contact-strip">
+            <span class="contact-chip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>La Habra, CA (Remote U.S.)</span>
+            </span>
+
+            <a
+              href="https://www.linkedin.com/in/abrahamhuitron"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-chip"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>linkedin.com/in/abrahamhuitron</span>
+            </a>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">
+              <span>Explore Experience</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <button type="button" class="btn btn--secondary js-print-resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <span>Download / Print Resume</span>
+            </button>
+            <a href="mailto:abrahamhuitron@outlook.com" class="btn btn--secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Telemetry Card -->
+        <aside class="profile-card" aria-label="Profile Snapshot">
+          <div class="profile-card__header">
+            <div class="window-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span>analyst_profile.pbix</span>
+          </div>
+
+          <div class="profile-card__image-wrap">
+            <img
+              src="images/me.png"
+              alt="Portrait of Abraham Huitron"
+              class="profile-card__img"
+            />
+          </div>
+
+          <div class="profile-card__badges">
+            <div class="mini-stat">
+              <div class="mini-stat__label">Core Architecture</div>
+              <div class="mini-stat__value">Power BI • SQL • Python</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat__label">Graduate Degree</div>
+              <div class="mini-stat__value">M.S. Data Science</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat__label">Production SLA</div>
+              <div class="mini-stat__value">95% On-Time SME</div>
+            </div>
+            <div class="mini-stat">
+              <div class="mini-stat__label">AI Workflows</div>
+              <div class="mini-stat__value">Copilot &amp; LLMs</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Executive KPI Dashboard Strip
+         ================================================================== -->
+    <section id="impact" class="kpi-section" aria-label="Career Key Performance Indicators">
+      <div class="container">
+        <div class="kpi-grid">
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">8+ Yrs</span>
+              <span class="kpi-card__badge">M.S. Data Science</span>
+            </div>
+            <h2 class="kpi-card__label">Analytics Experience</h2>
+            <p class="kpi-card__desc">
+              Architecting scalable Power BI ecosystems, SQL/Python pipelines, and executive storytelling.
+            </p>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">100+</span>
+              <span class="kpi-card__badge">Modernized</span>
+            </div>
+            <h2 class="kpi-card__label">BO → SSRS &amp; Power BI</h2>
+            <p class="kpi-card__desc">
+              Spearheaded enterprise BI conversion for UHC’s Employer &amp; Individual Business.
+            </p>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">2 Wks → 5m</span>
+              <span class="kpi-card__badge">-99% Time</span>
+            </div>
+            <h2 class="kpi-card__label">Automated SQL Solution</h2>
+            <p class="kpi-card__desc">
+              Consolidated a 50‑sheet manual workflow across 15 source files into 5‑minute self‑service.
+            </p>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">50% Cut</span>
+              <span class="kpi-card__badge">+30% Efficiency</span>
+            </div>
+            <h2 class="kpi-card__label">Manual Reporting Effort</h2>
+            <p class="kpi-card__desc">
+              Engineered automated Power BI dashboards &amp; unified dimensional models across 3 departments.
+            </p>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">95% SLA</span>
+              <span class="kpi-card__badge">5–6 / Wk</span>
+            </div>
+            <h2 class="kpi-card__label">Production Delivery</h2>
+            <p class="kpi-card__desc">
+              Financial‑Protection SME delivering weekly Power BI, SSRS, and SQL analytics for leadership.
+            </p>
+          </article>
+
+          <article class="kpi-card">
+            <div class="kpi-card__top">
+              <span class="kpi-card__value">100+ Hrs</span>
+              <span class="kpi-card__badge">45–60 Pros</span>
+            </div>
+            <h2 class="kpi-card__label">Live Data Instruction</h2>
+            <p class="kpi-card__desc">
+              Taught SQL, Python, R, Tableau, Power BI, and ML workflows to professional cohorts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Professional Experience Section
+         ================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <p class="section__eyebrow">Career Trajectory</p>
+            <h2 class="section__title">Professional Experience</h2>
+            <p class="section__subtitle">
+              Proven track record of spearheading enterprise BI modernization, architecting dimensional data models, and integrating AI-augmented analytics workflows.
+            </p>
+          </div>
+
+          <div class="filter-bar" role="group" aria-label="Filter experience by focus area">
+            <button type="button" class="filter-btn active" data-filter="all">All Roles (4)</button>
+            <button type="button" class="filter-btn" data-filter="bi">Power BI &amp; Storytelling</button>
+            <button type="button" class="filter-btn" data-filter="sql">SQL, Python &amp; AI</button>
+            <button type="button" class="filter-btn" data-filter="leadership">Leadership &amp; Instruction</button>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <!-- 1. UnitedHealthcare -->
+          <article class="exp-card" data-categories="bi,sql,leadership">
+            <div class="exp-card__header">
+              <div>
+                <h3 class="exp-card__role">Data Analyst II</h3>
+                <p class="exp-card__company">UnitedHealthcare</p>
+              </div>
+              <div class="exp-card__meta">
+                <span class="exp-card__date">Oct 2022 – Present</span>
+                <span>Remote, U.S.</span>
+              </div>
+            </div>
+
+            <ul class="exp-card__bullets">
+              <li>
+                Spearhead enterprise BI modernization for UHC’s Employer &amp; Individual Business, converting <strong>100+ legacy SAP Business Objects reports</strong> into scalable <strong>SSRS and Power BI architectures</strong>.
+              </li>
+              <li>
+                Re‑engineered a fragmented <strong>2‑week, 50‑sheet manual workflow across 15 source files</strong> into a single <strong>5‑minute automated SQL solution</strong>, empowering self‑service access for business teams.
+              </li>
+              <li>
+                Integrate <strong>Generative AI and Copilot</strong> into daily engineering workflows to accelerate SQL/Python development, automate peer code reviews, and generate technical and executive documentation.
+              </li>
+              <li>
+                Design and deliver <strong>5–6 production Power BI, SSRS, and SQL analytics deliverables weekly (95% on‑time SLA)</strong>, distilling complex healthcare trends into clear visual narratives for leadership.
+              </li>
+              <li>
+                Serve as <strong>Financial‑Protection SME</strong> and primary cross‑departmental data liaison, translating ambiguous business questions into governed data models and actionable operational insights.
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">Microsoft Power BI (DAX, Power Query)</span>
+              <span class="tag">SQL Server (T-SQL)</span>
+              <span class="tag">Microsoft SSRS</span>
+              <span class="tag">Python</span>
+              <span class="tag">Generative AI &amp; LLM Workflows</span>
+              <span class="tag">Microsoft Copilot</span>
+              <span class="tag">AI-Assisted Code Review &amp; Documentation</span>
+              <span class="tag">Executive Data Visualization</span>
+              <span class="tag">Workflow Optimization</span>
+            </div>
+          </article>
+
+          <!-- 2. ThriveDX -->
+          <article class="exp-card" data-categories="bi,sql,leadership">
+            <div class="exp-card__header">
+              <div>
+                <h3 class="exp-card__role">Data Science &amp; Analytics Instructor</h3>
+                <p class="exp-card__company">ThriveDX</p>
+              </div>
+              <div class="exp-card__meta">
+                <span class="exp-card__date">Jan 2022 – May 2023</span>
+                <span>Remote, U.S.</span>
+              </div>
+            </div>
+
+            <ul class="exp-card__bullets">
+              <li>
+                Delivered <strong>100+ hours of live instruction to cohorts of 45–60 professionals</strong> on SQL, Python, R, Tableau, Power BI, and Amazon AI, demystifying complex statistical and machine learning concepts for diverse audiences.
+              </li>
+              <li>
+                Guided learners through <strong>end‑to‑end data science workflows</strong>—spanning data cleaning, predictive modeling, and executive data storytelling—through 3‑hour interactive coding and case‑study workshops.
+              </li>
+              <li>
+                Designed cross‑platform <strong>Tableau and Power BI curriculum modules</strong> to teach universal visual design best practices and self‑service dashboard development.
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">SQL Server (T-SQL)</span>
+              <span class="tag">Python</span>
+              <span class="tag">R</span>
+              <span class="tag">Microsoft Power BI (DAX, Power Query)</span>
+              <span class="tag">Tableau</span>
+              <span class="tag">Predictive Modeling</span>
+              <span class="tag">Statistical Thinking</span>
+              <span class="tag">Technical Instruction</span>
+            </div>
+          </article>
+
+          <!-- 3. CRMLS - Data Analyst -->
+          <article class="exp-card" data-categories="bi,sql,leadership">
+            <div class="exp-card__header">
+              <div>
+                <h3 class="exp-card__role">Data Analyst</h3>
+                <p class="exp-card__company">California Regional Multiple Listing Service (CRMLS)</p>
+              </div>
+              <div class="exp-card__meta">
+                <span class="exp-card__date">Jul 2020 – Oct 2022</span>
+                <span>Remote, U.S.</span>
+              </div>
+            </div>
+
+            <ul class="exp-card__bullets">
+              <li>
+                Introduced <strong>enterprise Power BI analytics from the ground up</strong> and architected the organization’s first <strong>unified dimensional data models</strong> across three operational departments.
+              </li>
+              <li>
+                Engineered automated <strong>Power BI dashboards and SQL Server / Azure Data Studio pipelines</strong> that reduced manual reporting effort by <strong>50%</strong>.
+              </li>
+              <li>
+                Authored foundational <strong>data model documentation and BI governance standards</strong> that became the blueprint for all subsequent analytics initiatives.
+              </li>
+              <li>
+                Partnered with cross‑functional business leaders to capture operational requirements and translate raw data into intuitive, actionable visual reporting.
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">Microsoft Power BI (DAX, Power Query)</span>
+              <span class="tag">SQL Server (T-SQL)</span>
+              <span class="tag">Azure Data Studio</span>
+              <span class="tag">Dimensional Data Modeling</span>
+              <span class="tag">ETL Pipelines</span>
+              <span class="tag">Data Warehousing</span>
+              <span class="tag">Self-Service BI Governance</span>
+            </div>
+          </article>
+
+          <!-- 4. CRMLS - Technical Operations Analyst -->
+          <article class="exp-card" data-categories="bi,leadership">
+            <div class="exp-card__header">
+              <div>
+                <h3 class="exp-card__role">Technical Operations Analyst</h3>
+                <p class="exp-card__company">California Regional Multiple Listing Service (CRMLS)</p>
+              </div>
+              <div class="exp-card__meta">
+                <span class="exp-card__date">Jul 2017 – Jul 2020</span>
+                <span>Chino Hills, CA</span>
+              </div>
+            </div>
+
+            <ul class="exp-card__bullets">
+              <li>
+                Built and maintained <strong>Salesforce operational dashboards</strong> tracking daily ticket queues (<strong>10–50 tickets/day</strong>) and SLA resolution times to keep departmental KPIs below target.
+              </li>
+              <li>
+                Led end‑to‑end <strong>data quality validation across 20–40 daily real‑estate listings</strong>, resolving schema and integrity issues for agents, analysts, and senior stakeholders.
+              </li>
+              <li>
+                Partnered with software engineering across <strong>10+ core product rollouts</strong>, executing after‑hours release QA that prevented post‑deployment downtime.
+              </li>
+            </ul>
+
+            <div class="tag-list">
+              <span class="tag">Executive Data Visualization</span>
+              <span class="tag">Data Mapping</span>
+              <span class="tag">Cross-Functional Team Leadership</span>
+              <span class="tag">Data-Driven Decision Making</span>
+              <span class="tag">Workflow Optimization</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Interactive Skills & Tools Matrix
+         ================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <p class="section__eyebrow">Technical Stack</p>
+            <h2 class="section__title">Skills &amp; Core Competencies</h2>
+            <p class="section__subtitle">
+              Click any skill badge below to highlight where it was applied across my professional experience above.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. BI & Data Storytelling -->
+          <article class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">BI &amp; Data Storytelling</h3>
+                <p class="skill-card__subtitle">Enterprise Dashboards, DAX &amp; BI Governance</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <button type="button" class="skill-pill" data-skill="Power BI">
+                <span class="skill-pill__dot"></span>Microsoft Power BI (DAX, Power Query)
+              </button>
+              <button type="button" class="skill-pill" data-skill="Tableau">
+                <span class="skill-pill__dot"></span>Tableau
+              </button>
+              <button type="button" class="skill-pill" data-skill="SSRS">
+                <span class="skill-pill__dot"></span>Microsoft SSRS
+              </button>
+              <button type="button" class="skill-pill" data-skill="Crystal Reports">
+                <span class="skill-pill__dot"></span>SAP Crystal Reports
+              </button>
+              <button type="button" class="skill-pill" data-skill="Executive Data Visualization">
+                <span class="skill-pill__dot"></span>Executive Data Visualization
+              </button>
+              <button type="button" class="skill-pill" data-skill="Self-Service BI Governance">
+                <span class="skill-pill__dot"></span>Self-Service BI Governance
+              </button>
+              <button type="button" class="skill-pill" data-skill="Excel">
+                <span class="skill-pill__dot"></span>Advanced Excel
+              </button>
+            </div>
+          </article>
+
+          <!-- 2. AI & Data Science -->
+          <article class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon skill-card__icon--blue">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"></path>
+                  <path d="M16 14h2a4 4 0 0 1 4 4v2H2v-2a4 4 0 0 1 4-4h2"></path>
+                  <circle cx="12" cy="17" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">AI &amp; Data Science</h3>
+                <p class="skill-card__subtitle">AI-Augmented Workflows &amp; Statistical Modeling</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <button type="button" class="skill-pill" data-skill="Generative AI">
+                <span class="skill-pill__dot"></span>Generative AI &amp; LLM Workflows
+              </button>
+              <button type="button" class="skill-pill" data-skill="Copilot">
+                <span class="skill-pill__dot"></span>Microsoft Copilot
+              </button>
+              <button type="button" class="skill-pill" data-skill="Code Review">
+                <span class="skill-pill__dot"></span>AI-Assisted Code Review &amp; Documentation
+              </button>
+              <button type="button" class="skill-pill" data-skill="Predictive Modeling">
+                <span class="skill-pill__dot"></span>Predictive Modeling
+              </button>
+              <button type="button" class="skill-pill" data-skill="Time-Series Forecasting">
+                <span class="skill-pill__dot"></span>Time-Series Forecasting
+              </button>
+              <button type="button" class="skill-pill" data-skill="Multivariate Regression">
+                <span class="skill-pill__dot"></span>Multivariate Regression
+              </button>
+              <button type="button" class="skill-pill" data-skill="Statistical Thinking">
+                <span class="skill-pill__dot"></span>Statistical Thinking
+              </button>
+            </div>
+          </article>
+
+          <!-- 3. Data Engineering & Programming -->
+          <article class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon skill-card__icon--cyan">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Data Engineering &amp; Programming</h3>
+                <p class="skill-card__subtitle">Pipelines, Dimensional Modeling &amp; Development</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <button type="button" class="skill-pill" data-skill="SQL Server">
+                <span class="skill-pill__dot"></span>SQL Server (T-SQL)
+              </button>
+              <button type="button" class="skill-pill" data-skill="Python">
+                <span class="skill-pill__dot"></span>Python
+              </button>
+              <button type="button" class="skill-pill" data-skill="R">
+                <span class="skill-pill__dot"></span>R
+              </button>
+              <button type="button" class="skill-pill" data-skill="RStudio">
+                <span class="skill-pill__dot"></span>RStudio
+              </button>
+              <button type="button" class="skill-pill" data-skill="Azure Data Studio">
+                <span class="skill-pill__dot"></span>Azure Data Studio
+              </button>
+              <button type="button" class="skill-pill" data-skill="ETL Pipelines">
+                <span class="skill-pill__dot"></span>ETL Pipelines
+              </button>
+              <button type="button" class="skill-pill" data-skill="Data Warehousing">
+                <span class="skill-pill__dot"></span>Data Warehousing
+              </button>
+              <button type="button" class="skill-pill" data-skill="Dimensional Data Modeling">
+                <span class="skill-pill__dot"></span>Dimensional Data Modeling
+              </button>
+              <button type="button" class="skill-pill" data-skill="Data Mapping">
+                <span class="skill-pill__dot"></span>Data Mapping
+              </button>
+              <button type="button" class="skill-pill" data-skill="VBA">
+                <span class="skill-pill__dot"></span>VBA
+              </button>
+              <button type="button" class="skill-pill" data-skill="ASP.NET">
+                <span class="skill-pill__dot"></span>ASP.NET
+              </button>
+              <button type="button" class="skill-pill" data-skill="Visio">
+                <span class="skill-pill__dot"></span>Visio
+              </button>
+              <button type="button" class="skill-pill" data-skill="Git">
+                <span class="skill-pill__dot"></span>Git / GitHub
+              </button>
+            </div>
+          </article>
+
+          <!-- 4. Leadership & Languages -->
+          <article class="skill-card">
+            <div class="skill-card__header">
+              <div class="skill-card__icon skill-card__icon--emerald">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Leadership &amp; Languages</h3>
+                <p class="skill-card__subtitle">Cross‑Functional Collaboration &amp; Instruction</p>
+              </div>
+            </div>
+            <div class="skill-pills">
+              <button type="button" class="skill-pill" data-skill="Cross-Functional Team Leadership">
+                <span class="skill-pill__dot"></span>Cross-Functional Team Leadership
+              </button>
+              <button type="button" class="skill-pill" data-skill="Technical Instruction">
+                <span class="skill-pill__dot"></span>Technical Instruction
+              </button>
+              <button type="button" class="skill-pill" data-skill="Workflow Optimization">
+                <span class="skill-pill__dot"></span>Workflow Optimization
+              </button>
+              <button type="button" class="skill-pill" data-skill="Data-Driven Decision Making">
+                <span class="skill-pill__dot"></span>Data-Driven Decision Making
+              </button>
+              <span class="skill-pill" title="Conversational Proficiency">
+                <span class="skill-pill__dot"></span>Spanish (Conversational)
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Education & Academic Capstone Projects
+         ================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <p class="section__eyebrow">Academic Foundation</p>
+            <h2 class="section__title">Education &amp; Capstone Research</h2>
+            <p class="section__subtitle">
+              Graduate and undergraduate training in Data Science, Information Systems, and Computer Science at CSUF.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <!-- M.S. IT - Data Science -->
+          <article class="edu-card">
+            <div>
+              <div class="edu-card__top">
+                <div>
+                  <h3 class="edu-card__degree">M.S., Information Technology – Data Science</h3>
+                  <p class="edu-card__school">California State University, Fullerton (CSUF)</p>
+                </div>
+                <span class="edu-card__date">May 2020</span>
+              </div>
+
+              <div class="edu-card__highlights">
+                <div class="edu-highlight">
+                  <strong>Graduate Capstone Project</strong>
+                  Built predictive crime‑analysis models across 3,000+ L.A.P.D. incident records using RStudio, Forecast Pro, and Excel, applying time‑series forecasting, multivariate regression, and data preprocessing.
+                </div>
+                <div class="edu-highlight">
+                  <strong>Vice President, IT, Business &amp; Data Analytics Club</strong>
+                  Led a 25‑member team organizing technical workshops, hackathons, and industry speaker events.
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- B.A. Business Admin - IS & CS -->
+          <article class="edu-card">
+            <div>
+              <div class="edu-card__top">
+                <div>
+                  <h3 class="edu-card__degree">
+                    B.A., Business Administration – Information Systems &amp; Computer Science
+                  </h3>
+                  <p class="edu-card__school">California State University, Fullerton (CSUF)</p>
+                </div>
+                <span class="edu-card__date">May 2017</span>
+              </div>
+
+              <div class="edu-card__highlights">
+                <div class="edu-highlight">
+                  <strong>Undergraduate Capstone Project</strong>
+                  Designed and deployed an employee‑management and inventory portal (ASP.NET, SQL Server, Visio) integrating relational database design, UI prototyping, and workflow automation.
+                </div>
+                <div class="edu-highlight">
+                  <strong>Academic Honors</strong>
+                  Dean’s List – Fall 2013
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Future-Ready Power BI JPEG Showcase Section (Hidden for Now)
+         HOW TO ENABLE LATER:
+         1. Remove the `hidden` attribute from `<section id="projects" ...>` below.
+         2. Uncomment `<a href="#projects">Projects</a>` in the navbar above.
+         3. Drop your `.jpg` or `.png` dashboard screenshots into `images/` and update `src` & `data-full-img`.
+         ================================================================== -->
+    <section id="projects" class="section" hidden>
+      <div class="container">
+        <div class="section__header">
+          <div>
+            <p class="section__eyebrow">Visual Portfolio</p>
+            <h2 class="section__title">Power BI &amp; Analytics Showcase</h2>
+            <p class="section__subtitle">
+              Click any dashboard snapshot below to open a high‑resolution view.
+            </p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Example Card 1 -->
+          <article
+            class="gallery-card"
+            data-full-img="images/dashboard-sample-1.jpg"
+            data-title="Executive KPI & Financial Protection Dashboard"
+          >
+            <div class="gallery-card__thumb">
+              <img src="images/dashboard-sample-1.jpg" alt="Executive KPI Dashboard Preview" loading="lazy" />
+            </div>
+            <div class="gallery-card__body">
+              <h3 class="gallery-card__title">Executive KPI &amp; SLA Dashboard</h3>
+              <p class="gallery-card__desc">
+                Consolidated multi‑source SQL reporting into an executive Power BI view tracking SLA adherence and volume trends.
+              </p>
+              <div class="tag-list">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">SQL Server</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Contact Banner Section
+         ================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-banner">
+          <div>
+            <p class="section__eyebrow">Let’s Connect</p>
+            <h2 class="contact-banner__title">Open to Senior Analytics &amp; BI Opportunities</h2>
+            <p class="contact-banner__text">
+              Looking for a Senior Data Analyst &amp; Analytics Specialist to architect scalable Power BI ecosystems, automate SQL/Python pipelines, or drive AI‑augmented analytics? Let’s connect.
+            </p>
+          </div>
+
+          <div class="contact-banner__actions">
+            <a href="mailto:abrahamhuitron@outlook.com" class="btn btn--primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Email Abraham</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abrahamhuitron"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--secondary"
+            >
+              <span>Connect on LinkedIn</span>
+            </a>
+            <button type="button" class="btn btn--secondary js-print-resume">
+              <span>Save Resume as PDF</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal for Future JPEG Dashboards -->
+  <div id="lightbox-modal" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox__content">
+      <div class="lightbox__header">
+        <strong id="lightbox-title">Dashboard Preview</strong>
+        <button type="button" id="lightbox-close" class="btn-icon" aria-label="Close preview">✕</button>
+      </div>
+      <div class="lightbox__img-wrap">
+        <img id="lightbox-img" src="" alt="Full resolution dashboard preview" />
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Abraham Huitron • La Habra, CA • <a href="https://www.abrahamhuitron.com">abrahamhuitron.com</a></p>
+      <div class="footer__socials">
+        <a href="mailto:abrahamhuitron@outlook.com">Email</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/abrahamhuitron" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
