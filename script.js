@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxTitle = document.getElementById('lightbox-title');
   const lightboxClose = document.getElementById('lightbox-close');
 
-  document.querySelectorAll('.gallery-card').forEach((card) => {
+  document.querySelectorAll('.gallery-card, .js-zoom-preview').forEach((card) => {
     card.addEventListener('click', () => {
       const imgSrc = card.getAttribute('data-full-img');
       const title = card.getAttribute('data-title');
