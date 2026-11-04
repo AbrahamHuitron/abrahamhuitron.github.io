@@ -1843,7 +1843,8 @@ a.contact-chip:hover {
   }
 
   .tag-list,
-  .edu-coursework {
+  .edu-coursework,
+  .code-drawer {
     display: none !important;
   }
 
