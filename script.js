@@ -183,5 +183,23 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox();
   });
+
+  /* ========================================================================
+     7. Profile Card Photo Mode Toggle (Executive / Illustrated / Casual)
+     ======================================================================== */
+  const photoModeBtns = document.querySelectorAll('.profile-mode-btn[data-photo-mode]');
+  const proImg = document.getElementById('profile-img-pro');
+  const illustratedImg = document.getElementById('profile-img-illustrated');
+  const casualImg = document.getElementById('profile-img-casual');
+
+  photoModeBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const mode = btn.getAttribute('data-photo-mode');
+      photoModeBtns.forEach((b) => b.classList.toggle('active', b === btn));
+      if (proImg) proImg.classList.toggle('is-active', mode === 'pro');
+      if (illustratedImg) illustratedImg.classList.toggle('is-active', mode === 'illustrated');
+      if (casualImg) casualImg.classList.toggle('is-active', mode === 'casual');
+    });
+  });
 });
 

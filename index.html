@@ -15,7 +15,7 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.abrahamhuitron.com" />
-  <meta property="og:image" content="https://www.abrahamhuitron.com/images/me.png" />
+  <meta property="og:image" content="https://www.abrahamhuitron.com/images/me-pro.jpg" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -219,10 +219,34 @@
 
           <div class="profile-card__image-wrap">
             <img
-              src="images/me.png"
-              alt="Portrait of Abraham Huitron"
-              class="profile-card__img"
+              src="images/me-pro.jpg"
+              alt="Executive portrait of Abraham Huitron"
+              class="profile-card__img profile-card__img--pro is-active"
+              id="profile-img-pro"
             />
+            <img
+              src="images/me-illustrated.jpg"
+              alt="Illustrated portrait of Abraham Huitron"
+              class="profile-card__img profile-card__img--illustrated"
+              id="profile-img-illustrated"
+            />
+            <img
+              src="images/me.png"
+              alt="Casual portrait of Abraham Huitron"
+              class="profile-card__img profile-card__img--casual"
+              id="profile-img-casual"
+            />
+            <div class="profile-mode-toggle" role="group" aria-label="Switch profile photo style">
+              <button type="button" class="profile-mode-btn active" data-photo-mode="pro">
+                Executive
+              </button>
+              <button type="button" class="profile-mode-btn" data-photo-mode="illustrated">
+                Illustrated
+              </button>
+              <button type="button" class="profile-mode-btn" data-photo-mode="casual">
+                Casual
+              </button>
+            </div>
           </div>
 
           <div class="profile-card__badges">
@@ -1662,13 +1686,28 @@ _Measures[Total Showings] - _Measures[Prev 7d Total Showings]</pre>
 
               <div class="edu-card__highlights">
                 <div class="edu-highlight">
-                  <strong>Graduate Capstone Project</strong>
+                  <strong>Graduate Capstone Project (ISDS 577)</strong>
                   Built predictive crime‑analysis models across 3,000+ L.A.P.D. incident records using RStudio, Forecast Pro, and Excel, applying time‑series forecasting, multivariate regression, and data preprocessing.
                 </div>
                 <div class="edu-highlight">
-                  <strong>Vice President, IT, Business &amp; Data Analytics Club</strong>
+                  <strong>Vice President — IT, Business &amp; Data Analytics Club</strong>
                   Led a 25‑member team organizing technical workshops, hackathons, and industry speaker events.
                 </div>
+              </div>
+            </div>
+
+            <div class="edu-coursework">
+              <p class="edu-coursework__label">Graduate Data Science &amp; BI Coursework</p>
+              <div class="tag-list">
+                <span class="tag">Data Warehousing Foundations for BI</span>
+                <span class="tag">Business Data Transformation (ETL)</span>
+                <span class="tag">Business Database Design</span>
+                <span class="tag">Principles of Business Intelligence</span>
+                <span class="tag">Time-Series Forecasting &amp; Decision Analysis</span>
+                <span class="tag">Applied Multivariate Regression</span>
+                <span class="tag">Statistics for Data Science</span>
+                <span class="tag">Data Mining for Business</span>
+                <span class="tag">IT Project Management</span>
               </div>
             </div>
           </article>
@@ -1679,7 +1718,7 @@ _Measures[Total Showings] - _Measures[Prev 7d Total Showings]</pre>
               <div class="edu-card__top">
                 <div>
                   <h3 class="edu-card__degree">
-                    B.A., Business Administration – Information Systems &amp; Computer Science
+                    B.A., Business Administration – Information Systems (Minor: Computer Science)
                   </h3>
                   <p class="edu-card__school">California State University, Fullerton (CSUF)</p>
                 </div>
@@ -1688,13 +1727,27 @@ _Measures[Total Showings] - _Measures[Prev 7d Total Showings]</pre>
 
               <div class="edu-card__highlights">
                 <div class="edu-highlight">
-                  <strong>Undergraduate Capstone Project</strong>
+                  <strong>Undergraduate Capstone Project (ISDS 454)</strong>
                   Designed and deployed an employee‑management and inventory portal (ASP.NET, SQL Server, Visio) integrating relational database design, UI prototyping, and workflow automation.
                 </div>
                 <div class="edu-highlight">
-                  <strong>Academic Honors</strong>
-                  Dean’s List – Fall 2013
+                  <strong>Academic Honors &amp; Distinctions</strong>
+                  Dean’s List (Fall 2013) • Admitted with Distinction • AP Spanish Language &amp; Culture Credit
                 </div>
+              </div>
+            </div>
+
+            <div class="edu-coursework">
+              <p class="edu-coursework__label">Core Information Systems &amp; Computer Science Coursework</p>
+              <div class="tag-list">
+                <span class="tag">Database Management Systems</span>
+                <span class="tag">File Structures &amp; Database Systems</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Systems Analysis &amp; Design</span>
+                <span class="tag">Business Analytics &amp; Probability/Statistics</span>
+                <span class="tag">Principles of Business Intelligence</span>
+                <span class="tag">Object-Oriented Programming Concepts</span>
+                <span class="tag">Operations Management</span>
               </div>
             </div>
           </article>
