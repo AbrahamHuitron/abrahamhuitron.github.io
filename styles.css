@@ -1203,6 +1203,25 @@ a.contact-chip:hover {
   color: var(--text-muted);
 }
 
+.reviews-subhead {
+  margin: 44px 0 20px;
+  padding-top: 28px;
+  border-top: 1px dashed var(--border-subtle);
+}
+
+.reviews-subhead__title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.reviews-subhead__note {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  max-width: 72ch;
+}
+
 /* ==========================================================================
    Power BI & Analytics Project Case Studies
    ========================================================================== */
